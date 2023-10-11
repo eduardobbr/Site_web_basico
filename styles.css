@@ -1,0 +1,307 @@
+/* styles.css */
+
+body {
+    font: 400 1em/1.5 "Neuton";
+    background: #090d00;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  p {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+  }
+  
+  p span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.473);
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+  
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* header  */
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilizando o botão de login no header */
+#login-button {
+    background-color: #17c700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#login-button:hover {
+    background-color: #e64000;
+}
+
+/* conteúdo da página */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Para ocupar o espaço restante verticalmente */
+}
+
+/* cards */
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    margin-top: 15rem;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://imgs.search.brave.com/lQkehZY4H0j00ZGoJ_kiLNlKMHDV3vzhBHnEO-GdbzI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c29ueXBpY3R1cmVz/LmNvbS5ici9zaXRl/cy9icmF6aWwvZmls/ZXMvMjAyMy0wOC9T/Tl9Ib21lbUFyYW5o/YV8xNDAweDIxMDAl/MjAoMSkuanBn);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card2 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://imgs.search.brave.com/wF1cNNe9ezjHlzTTrDADcp7WNO_t2TkhX5qQt-Wo_3o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dWNpY2luZW1hcy5j/b20uYnIvQ29udGVu/dC9VcGxvYWQvRmls/bWVzL1Bvc3RlcnMv/MTA4MTcvZmlsbWVf/MTA4MTcuanBn);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card3 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://imgs.search.brave.com/QajClN3Z6xe8weVUi0ku042rZTLHQjoGzH-YZ2Y7hTo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2xhcXVldGUuY29t/LmJyL2ZvdG9zL2Zp/bG1lcy9wb3N0ZXIv/MTU0MDNfbWVkaW8u/anBn);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card4 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://imgs.search.brave.com/7qqR-z24N9-Clfzdm0Ic_c7kk-9bCUw90_kvyX8p-C4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dWNpY2luZW1hcy5j/b20uYnIvQ29udGVu/dC9VcGxvYWQvRmls/bWVzL1Bvc3RlcnMv/MTA5MjcvZmlsbWVf/MTA5MjcuanBn);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card5 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://imgs.search.brave.com/A3RGunQxoT_Oe-o6wAaxbVivTmOJiBwrFEHGRnW3Q40/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aXRhdWNpbmVtYXMu/Y29tLmJyL19pbWcv/X2ZpbG1lcy81NDM4/X2NhcGEuanBnP1Jl/c2lzdGVuY2lh);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card6 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://imgs.search.brave.com/dAY6itCpfIvIQYUZ09Gyq59qTg_XMqKfAenh1m3wDcY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ici53/ZWIuaW1nMi5hY3N0/YS5uZXQvY18zMDBf/MzAwL3BpY3R1cmVz/LzIzLzA1LzE2LzIy/LzUzLzAxNTY4MDMu/anBn);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.card2:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.card3:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.card4:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.card5:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.card6:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card h2 {
+    color: white;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #33333398;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* formulario */ 
+
+form {
+    text-align: center;
+    margin-top: 15rem;
+    align-items: center;
+    background-color: rgb(80, 42, 131);
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Estilo para os rótulos dos campos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* Estilo para os campos de entrada de texto */
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de login */
+button[type="submit"] {
+    background-color: #17c700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e64000;
+}
+
+/* Estilo para o parágrafo no elemento <main> */
+main p {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.5em 0em;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+    
+}
+
+main p span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.473);
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
