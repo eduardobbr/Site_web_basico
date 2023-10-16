@@ -63,6 +63,20 @@ header {
 }
 
 /* Estilizando o botão de login no header */
+#home-button {
+    background-color: #17c700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+
+#home-button:hover {
+    background-color: #e64000;
+}
+
 #login-button {
     background-color: #17c700;
     color: #fff;
@@ -70,12 +84,35 @@ header {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    
+}
+.nav{
+    background-color: #17c700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+
 }
 
 #login-button:hover {
     background-color: #e64000;
 }
 
+#serie-button {
+    background-color: #17c700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+
+#serie-button:hover {
+    background-color: #e64000;
+}
 /* conteúdo da página */
 
 main {
@@ -86,7 +123,7 @@ main {
     flex-grow: 1; /* Para ocupar o espaço restante verticalmente */
 }
 
-/* cards */
+/* cards home */
 
 .card-container {
     display: flex;
@@ -180,6 +217,7 @@ main {
 }
 
 
+
 .card:hover {
     transform: translateY(-5px);
     cursor: pointer;
@@ -209,10 +247,534 @@ main {
     color: white;
 }
 
+/* Parte de estilo SERIES */
+
+.card-container-serie {
+    margin-top: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-serie1 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/xMI4ToxjqQ16afwNfklTXUKPCoE.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie2 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/cTJYU7lpFbrz5hoIQugGBDEdezy.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie3 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/Qy5KXMn88HHZRvcjtttuqyBesn.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie4 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/1LVJsegSfZEZr7gdVs5CbyGt5Lk.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie5 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/6OTZ66ZlJvOVb5A8ALiPzTD0n3H.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie6 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/c7bpibmgrAJfcDCTAB1yR1w3X9U.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie7 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/nDcCDesRRavcr5D4MpydMrN5RMz.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie8 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/fPyX82cUcqeuiOe3msuVeOnMCc9.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie9 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/5im3hm58kN4M2bKZgXz8ZvFuRlh.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie10 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/wxPxeGw7GRxxChlJrq5UlACjXDf.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie11 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/kJ7dyj7iF7zMaSWxtlIqQrl2BZj.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie12 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/wuVngWpJNrhojvkbYibosycSUKy.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie13 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/s83DmhvDxeVPu4x4ZpLQ3KmGe0K.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie14 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/3lXoJ6kqWQzQM8GTSWZlCOxSs70.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie15 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/vKkzy0lqZoOGdekpSaXfNBiUkgV.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie16 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/g6ChGB5ZCmPwo3T8qCoIaiFWPDf.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie17 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/a2Ckhf72DfQKRNZpeECxyrqaIV3.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie18 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/mdH0FbD328BIann1TPVwsPdCi0G.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie19 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/cSnH3z11orsFkngkVt59vi4DnZJ.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie20 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/pvLHX43Btkayypqp23fWaROILa5.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie21 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/uv63iNWOh69bSJYJQZjiX6n8B3m.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie22 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/2Q7HWyDO3PCKJPcfZh0KzYws6ys.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie23 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/7EOWkNGxXq2MBZxfV3ZxjRM4vlH.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie24 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/4TeM8li5TeJ4CquL26bbrnCZ8yM.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie25 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/vvOccQ5Mcn665KXS2KSnldhpvva.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie26 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/9FrKOIebq6uYDPtSadrOp3Pipl3.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie27 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://image.tmdb.org/t/p/w500/cpZ6QBAHhWardieS6MgT8nhMnWx.jpg);
+    background-position: center; /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-serie1:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie2:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie3:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie4:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie5:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie6:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie7:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie8:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie9:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie10:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie11:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie12:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie13:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie14:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie15:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie16:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie17:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie18:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie19:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie20:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie21:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie22:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie23:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie24:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie25:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie26:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-serie27:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
 
 /* footer */
 
 footer {
+    margin-top: 2%;
     background-color: #33333398;
     color: white;
     text-align: center;
