@@ -473,6 +473,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    padding: 18rem;
     /* Para ocupar o espaço restante verticalmente */
 }
 
@@ -481,10 +482,10 @@ main {
 .card-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     /* Distribui os elementos com espaço entre eles */
     align-items: center;
     /* Alinha os elementos verticalmente ao centro */
-    margin-top: 15rem;
     
 
 }
@@ -495,9 +496,7 @@ main {
     /* Distribui os elementos com espaço entre eles */
     align-items: center;
     /* Alinha os elementos verticalmente ao centro */
-    margin-top: 15rem;
-    
-
+    margin-top: 5rem;
 }
 
 .card {
@@ -1226,7 +1225,7 @@ footer {
 
 form {
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 5rem;
     align-items: center;
     background-color: rgb(80, 42, 131);
     border-radius: 20px;
