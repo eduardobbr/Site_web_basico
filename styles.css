@@ -10,9 +10,24 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de largura igual */
+    gap: 10px; /* Espaço entre as colunas */
   }
   
-  p {
+  .grid-item {
+    text-align: center; /* Alinhe o conteúdo no centro das células do grid */
+  }
+  
+  .grid-item img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner da coluna */
+  }
+  
+
+p {
     text-transform: uppercase;
     letter-spacing: 0.5em;
     display: inline-block;
@@ -24,9 +39,343 @@ body {
     left: 50%;
     width: 40em;
     margin: 0 0 0 -20em;
-  }
-  
-  p span {
+}
+
+.card-canais1 {
+    margin-top: 120px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/89/Logotipo_da_GloboNews.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner da coluna */
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px;
+    text-align: center; /* Alinhe o conteúdo no centro das células do grid */
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais2 {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt5b126f5c37b4648d/63e5616304418740b3be012a/sportv-logo-8.png?auto=webp&format=pjpg&width=828&quality=60);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    text-align: center; /* Alinhe o conteúdo no centro das células do grid */
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(255, 255, 255, 0.918);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais3 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://a1.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fespn_logos%2Fespn_red.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center; /* Alinhe o conteúdo no centro das células do grid */
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(255, 0, 0, 0.861);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais4 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://yt3.googleusercontent.com/VqsfY5sZkGoth0GasS9bAL3wVv3UdJQ3SoVLnoM5e-oZPCHmDr__pxaq2Wa7YBmz5sWF5bJKcg=s900-c-k-c0x00ffffff-no-rj);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(255, 255, 255, 0.884);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais5 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://www.nationalgeographicbrasil.com/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+
+.card-canais7 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://play-lh.googleusercontent.com/ZhI1_XzoQCl5u9kvIx28E8kTYOO6qP0EEerUZXnGV3aSzMRidE2XAIsUYZeCb3n7LfQ);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais8 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/640px-Cartoon_Network_2010_logo.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais9 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/800px-TNT_Logo_2016.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais10 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/640px-HBO_logo.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais11 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4d/FX_International_logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais12 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/1200px-Universal_TV_logo.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais13 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Fox_Sports_Argentina_2023.svg/1200px-Fox_Sports_Argentina_2023.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais14 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/GNT_logo-roxo.svg/800px-GNT_logo-roxo.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(0, 0, 0);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+.card-canais15 {
+    background-repeat: none;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    padding: 30px;
+    background-image: url(https://yt3.googleusercontent.com/L8svVJBwJuCV9gG6-A6q8efblNC5mEH3ydOOm5KVKWgp9TAUXjQHoiRocWK80mqOAmIeoIprAA=s900-c-k-c0x00ffffff-no-rj);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centraliza a imagem no card */
+    background-size: contain;
+    width: 100px;
+    height: 150px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(0, 0, 0);
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
+}
+
+
+
+.card-canais1:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais2:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais3:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais4:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais5:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais6:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais7:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais8:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais9:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais10:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais11:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais12:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais13:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais14:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.card-canais15:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+
+p span {
     font: 700 4em/1 "Oswald", sans-serif;
     letter-spacing: 0;
     padding: 0.25em 0 0.325em;
@@ -40,18 +389,19 @@ body {
     -webkit-animation: aitf 80s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
-  }
-  
-  @-webkit-keyframes aitf {
+}
+
+@-webkit-keyframes aitf {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     100% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
-  }
-  
-  /* header  */
+}
+
+/* header  */
 
 header {
     background-color: #333;
@@ -84,9 +434,10 @@ header {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    
+
 }
-.nav{
+
+.nav {
     background-color: #17c700;
     color: #fff;
     border: none;
@@ -113,6 +464,7 @@ header {
 #serie-button:hover {
     background-color: #e64000;
 }
+
 /* conteúdo da página */
 
 main {
@@ -120,16 +472,32 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1; /* Para ocupar o espaço restante verticalmente */
+    flex-grow: 1;
+    /* Para ocupar o espaço restante verticalmente */
 }
 
 /* cards home */
 
 .card-container {
     display: flex;
-    justify-content: space-between; /* Distribui os elementos com espaço entre eles */
-    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    justify-content: space-between;
+    /* Distribui os elementos com espaço entre eles */
+    align-items: center;
+    /* Alinha os elementos verticalmente ao centro */
     margin-top: 15rem;
+    
+
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: space-between;
+    /* Distribui os elementos com espaço entre eles */
+    align-items: center;
+    /* Alinha os elementos verticalmente ao centro */
+    margin-top: 15rem;
+    
+
 }
 
 .card {
@@ -137,13 +505,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://imgs.search.brave.com/lQkehZY4H0j00ZGoJ_kiLNlKMHDV3vzhBHnEO-GdbzI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c29ueXBpY3R1cmVz/LmNvbS5ici9zaXRl/cy9icmF6aWwvZmls/ZXMvMjAyMy0wOC9T/Tl9Ib21lbUFyYW5o/YV8xNDAweDIxMDAl/MjAoMSkuanBn);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card2 {
@@ -151,13 +521,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://imgs.search.brave.com/wF1cNNe9ezjHlzTTrDADcp7WNO_t2TkhX5qQt-Wo_3o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dWNpY2luZW1hcy5j/b20uYnIvQ29udGVu/dC9VcGxvYWQvRmls/bWVzL1Bvc3RlcnMv/MTA4MTcvZmlsbWVf/MTA4MTcuanBn);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card3 {
@@ -165,13 +537,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://imgs.search.brave.com/QajClN3Z6xe8weVUi0ku042rZTLHQjoGzH-YZ2Y7hTo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2xhcXVldGUuY29t/LmJyL2ZvdG9zL2Zp/bG1lcy9wb3N0ZXIv/MTU0MDNfbWVkaW8u/anBn);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card4 {
@@ -179,13 +553,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://imgs.search.brave.com/7qqR-z24N9-Clfzdm0Ic_c7kk-9bCUw90_kvyX8p-C4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dWNpY2luZW1hcy5j/b20uYnIvQ29udGVu/dC9VcGxvYWQvRmls/bWVzL1Bvc3RlcnMv/MTA5MjcvZmlsbWVf/MTA5MjcuanBn);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card5 {
@@ -193,13 +569,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://imgs.search.brave.com/A3RGunQxoT_Oe-o6wAaxbVivTmOJiBwrFEHGRnW3Q40/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aXRhdWNpbmVtYXMu/Y29tLmJyL19pbWcv/X2ZpbG1lcy81NDM4/X2NhcGEuanBnP1Jl/c2lzdGVuY2lh);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card6 {
@@ -207,13 +585,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://imgs.search.brave.com/dAY6itCpfIvIQYUZ09Gyq59qTg_XMqKfAenh1m3wDcY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ici53/ZWIuaW1nMi5hY3N0/YS5uZXQvY18zMDBf/MzAwL3BpY3R1cmVz/LzIzLzA1LzE2LzIy/LzUzLzAxNTY4MDMu/anBn);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 
@@ -222,22 +602,27 @@ main {
     transform: translateY(-5px);
     cursor: pointer;
 }
+
 .card2:hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
+
 .card3:hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
+
 .card4:hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
+
 .card5:hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
+
 .card6:hover {
     transform: translateY(-5px);
     cursor: pointer;
@@ -263,13 +648,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/xMI4ToxjqQ16afwNfklTXUKPCoE.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie2 {
@@ -277,13 +664,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/cTJYU7lpFbrz5hoIQugGBDEdezy.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie3 {
@@ -291,13 +680,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/Qy5KXMn88HHZRvcjtttuqyBesn.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie4 {
@@ -305,13 +696,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/1LVJsegSfZEZr7gdVs5CbyGt5Lk.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie5 {
@@ -319,13 +712,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/6OTZ66ZlJvOVb5A8ALiPzTD0n3H.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie6 {
@@ -333,13 +728,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/c7bpibmgrAJfcDCTAB1yR1w3X9U.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie7 {
@@ -347,13 +744,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/nDcCDesRRavcr5D4MpydMrN5RMz.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie8 {
@@ -361,13 +760,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/fPyX82cUcqeuiOe3msuVeOnMCc9.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie9 {
@@ -375,13 +776,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/5im3hm58kN4M2bKZgXz8ZvFuRlh.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie10 {
@@ -389,13 +792,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/wxPxeGw7GRxxChlJrq5UlACjXDf.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie11 {
@@ -403,13 +808,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/kJ7dyj7iF7zMaSWxtlIqQrl2BZj.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie12 {
@@ -417,13 +824,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/wuVngWpJNrhojvkbYibosycSUKy.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie13 {
@@ -431,13 +840,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/s83DmhvDxeVPu4x4ZpLQ3KmGe0K.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie14 {
@@ -445,13 +856,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/3lXoJ6kqWQzQM8GTSWZlCOxSs70.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie15 {
@@ -459,13 +872,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/vKkzy0lqZoOGdekpSaXfNBiUkgV.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie16 {
@@ -473,13 +888,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/g6ChGB5ZCmPwo3T8qCoIaiFWPDf.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie17 {
@@ -487,13 +904,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/a2Ckhf72DfQKRNZpeECxyrqaIV3.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie18 {
@@ -501,13 +920,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/mdH0FbD328BIann1TPVwsPdCi0G.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie19 {
@@ -515,13 +936,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/cSnH3z11orsFkngkVt59vi4DnZJ.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie20 {
@@ -529,13 +952,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/pvLHX43Btkayypqp23fWaROILa5.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie21 {
@@ -543,13 +968,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/uv63iNWOh69bSJYJQZjiX6n8B3m.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie22 {
@@ -557,13 +984,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/2Q7HWyDO3PCKJPcfZh0KzYws6ys.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie23 {
@@ -571,13 +1000,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/7EOWkNGxXq2MBZxfV3ZxjRM4vlH.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie24 {
@@ -585,13 +1016,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/4TeM8li5TeJ4CquL26bbrnCZ8yM.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie25 {
@@ -599,13 +1032,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/vvOccQ5Mcn665KXS2KSnldhpvva.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie26 {
@@ -613,13 +1048,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/9FrKOIebq6uYDPtSadrOp3Pipl3.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie27 {
@@ -627,13 +1064,15 @@ main {
     box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
     padding: 30px;
     background-image: url(https://image.tmdb.org/t/p/w500/cpZ6QBAHhWardieS6MgT8nhMnWx.jpg);
-    background-position: center; /* Centraliza a imagem no card */
+    background-position: center;
+    /* Centraliza a imagem no card */
     background-size: contain;
     width: 100px;
     height: 150px;
     transition: all 0.3s ease-out;
     background-color: rgba(179, 210, 245, 0.212);
-    margin-right: 20px; /* Adicione uma margem direita para criar espaço entre os cards */
+    margin-right: 20px;
+    /* Adicione uma margem direita para criar espaço entre os cards */
 }
 
 .card-serie1:hover {
@@ -783,7 +1222,7 @@ footer {
 
 
 
-/* formulario */ 
+/* formulario */
 
 form {
     text-align: center;
@@ -840,7 +1279,7 @@ main p {
     left: 50%;
     width: 40em;
     margin: 0 0 0 -20em;
-    
+
 }
 
 main p span {
@@ -863,6 +1302,7 @@ main p span {
     0% {
         background-position: 0% 50%;
     }
+
     100% {
         background-position: 100% 50%;
     }
