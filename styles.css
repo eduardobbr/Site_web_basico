@@ -1669,3 +1669,22 @@ main p span {
         background-position: 100% 50%;
     }
 }
+
+table{
+    margin-top: 100px;
+}
+
+.filme-card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(179, 210, 245, 0.144);
+    width: 200px;
+    transition: all 0.3s ease-out;
+    background-color: rgba(179, 210, 245, 0.212);
+    margin-right: 20px;
+    margin: 15px 15px;
+}
+
+.filme-card:hover {
+    transform: translateX(-5px);
+    cursor: pointer;
+}
